@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simran Beauty products</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="Images/Screenshot 2021-08-11 at 6.09.56 AM.png" alt="" width="200px" height="80px"></a>
+        <div class="menuToggle" onclick="Tmenu();"></div>
+        <ul class="nvbar">
+            <li class="nvlist"><a class="nvanchor font" href="index.html">Home</a></li>
+            <li class="nvlist"><a class="nvanchor font" href="aboutUs.html">About Us</a></li>   
+            <li class="nvlist"><a class="nvanchor font" href="contactUs.html">Contact Us</a></li>
+            <li class="nvlist"><a class="nvanchor font" href="products.html">Products</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="banner">
+    <div class="content">
+    <h2 class="heading1"> Simran Beauty Box</h2>
+
+    <p class="para font">A great Beauty products store is one which provides good quality products at reasonable price.
+        
+    </p>
+    
+    </div>
+    </section>
+    <section class="section2" id="section2">
+        <div class="title">
+            <h2 class="titletext font">Our <span class="titlepink">H</span>ighlights</h2>
+            <p class="font">
+            	
+            	These are special products which are long lasting , for sensitive skin and with affordable price.
+            </p>
+        </div>
+     
+    </section>
+        <section class="testimonial" id="testimonial">
+           
+            <div class="content1">
+                <div class="box1">
+                    
+
+                    <div class="text">
+                        <p class="font pform">
+                            <table>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Brand</th>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                
+                                </tr>
+                                <tr>
+                                    <td><div class="imagebox1">
+                                        <img class="testimage" src="Images/lipstick.jpg" alt="">
+                                    </div></td>
+                                    <td>Mac</td>
+                                    <td>Lipstick in Velvet Teddy</td>
+                                    <td>$20</td>
+
+                                </tr>
+                                <tr>
+                                    <td><div class="imagebox1">
+                                        <img class="testimage" src="Images/mas.jpg" alt="">
+                                    </div></td>
+                                    <td>Benefit</td>
+                                    <td>Mascara</td>
+                                    <td>$24</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="imagebox1">
+                                        <img class="testimage" src="Images/dip.jpg" alt="">
+                                    </div></td>
+                                    <td>Anastasia Beverly Hills </td>
+                                    <td>Dipbrow Pomade</td>
+                                    <td>$19</td>
+                                 </tr>
+                                 <tr>
+                                    <td><div class="imagebox1">
+                                        <img class="testimage" src="Images/pow.jpg" alt="">
+                                    </div></td>
+                                    <td>Laura Mercier</td>
+                                    <td>Translucent Loose Setting Powder</td>
+                                    <td>$27</td>
+                                 </tr>
+                                 <tr>
+                                    <td><div class="imagebox1">
+                                        <img class="testimage" src="Images/pn.jpg" alt="">
+                                    </div></td>
+                                    <td>Mac</td>
+                                    <td>Lip Pencil in Cork</td>
+                                    <td>$16</td>
+                                 </tr>
+                               
+                            </table>
+                        </p>
+                
+                    </div>
+                </div>
+               
+                   <aside>         A cosmetic is generally defined as 
+                       “Any substance or preparation for human use for the purpose of cleansing,
+                        beautifying or altering the appearance commonly to include personal toiletry products
+                         (such as shampoos and lotion), 
+                       beauty products and fragrances.”
+                       There are a lot of products that are both manufactured and 
+                       imported from other countries. These products fall under five major categories 
+                       based on the body part on which it is used and the purpose of it.
+                        The major five main types of cosmetic products are,
+                       <div class = "list">
+                      <ol>
+                       <li>Haircare range</li>
+                       <li>Skincare range</li>
+                       <li>Face care range</li>
+                       <li>Personal care range</li>
+                       <li>Treatment range </li> </ol></div>
+                       
+                           <div class = "list">
+                   <ul>
+                        <li><a href="AboutUs.html"><b>About Us</b></a></li>
+                        <li><a href="ContactUs.html"><b>Order Products</b></a></li>
+                        <li><a href="products.html"><b>View More Products</b></a></li>
+                        
+                    </ul>
+                         
+                </div>
+                </aside>
+                       
+               
+            </div>
+        </section>
+<script type="text/javascript">
+    window.addEventListener('scroll',function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky",window.scrollY > 0);
+    });
+    function Tmenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const nvbar = document.querySelector('.nvbar');
+        menuToggle.classList.toggle('active');
+        nvbar.classList.toggle('active');
+    }
+
+    
+    </script>
+
+     <!-- footer section for the copyright and links to social medias -->
+     <footer>
+        <div id="copyright">
+          <p><!-- &#169; copyright symbol html entity number -->
+          &copy; Copyright 2020. All Rights Reserved. <br>
+          <a href="mailto:simisaggu12@gmail.com">simranbeautybox@org.net</a></p>
+       </div>
+        <div id="social">
+          <p>Connect with us in</p>
+          <p><a href="https://www.facebook.com"><img src="Images/fblogo.png" alt="facebook logo"></a></p>
+          <p><a href="https://www.twitter.com"><img src="Images/twitterlogo.png" alt="twitter logo"></a></p>
+         </div>
+      </footer>
+</body>
+</html>

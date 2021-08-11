@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simran beauty box</title>
+    <link rel="stylesheet" href="CSS/content.css">
+    <script type="text/javascript" src="script/myFunctions.js"></script>
+
+</head>
+<body>
+    <header>   <a href="#" class="logo"><img src="Images/Screenshot 2021-08-11 at 6.09.56 AM.png" alt="" width="200px" height="80px"></a>
+        <div class="menuToggle" onclick="Tmenu();"></div>
+        <ul class="nvbar">
+            <li class="nvlist"><a class="nvanchor font" href="index.html">Home</a></li>
+            <li class="nvlist"><a class="nvanchor font" href="aboutUs.html">About Us</a></li>   
+             <li class="nvlist"><a class="nvanchor font" href="products.html">Products</a></li>
+        </ul>
+        </header>
+        <section class="banner" id="banner"></section>
+        <div class = "contact">
+        <h2 class = "titletext"> <span>C</span>ontact Us</h2>
+        <p> You are most welcome to contact us</p>
+ 
+       
+        <div class="content">
+            <div class="box">
+                <h3> Send Message </h3>
+                <div class = "inputbox">
+                    <label for="questions">Questions?</label>
+                    <textarea name="questions" rows="3" cols="25"></textarea><br>
+                    <input type="submit" id="submit" class="btn" value="Submit" onclick="tyAlert()"><br>
+                    <input type="reset" id="reset" class="btn" value="Reset"><br>
+                </div>
+            </div>
+            <div class="box">
+                <div class = "inputbox">
+                    <p> Please feel free to Call at  <a href="tel:8145559608"><b>(814) 555-9608</b></a> for any query</p>
+                </div>
+            </div>
+        </div>
+
+      </div>
+        <script type="text/javascript">
+            window.addEventListener('scroll',function(){
+                const header = document.querySelector('header');
+                header.classList.toggle("sticky",window.scrollY > 0);
+            });
+            function Tmenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const nvbar = document.querySelector('.nvbar');
+        menuToggle.classList.toggle('active');
+        nvbar.classList.toggle('active');
+    }
+            </script>   
+<footer>
+    <div id="copyright">
+      <p><!-- &#169; copyright symbol html entity number -->
+      &copy; Copyright 2020. All Rights Reserved. <br>
+      <a href="mailto:simisaggu12@gmail.com">simranbeautybox@org.net</a></p>
+    </div>
+    <div id="social">
+      <p>Connect with us in</p>
+      <p><a href="https://www.facebook.com"><img src="Images/fblogo.png" alt="facebook logo"></a></p>
+      <p><a href="https://www.twitter.com"><img src="Images/twitterlogo.png" alt="twitter logo"></a></p>
+     </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Master</title>
+    <link rel="stylesheet" href="CSS/content.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="Images/Screenshot 2021-08-11 at 6.09.56 AM.png" alt="" width="200px" height="80px"></a>
+        <div class="menuToggle" onclick="Tmenu();"></div>
+        <ul class="nvbar">
+            <li class="nvlist"><a class="nvanchor font" href="index.html">Home</a></li>
+               <li class="nvlist"><a class="nvanchor font" href="contactUs.html">Contact Us</a></li>
+            <li class="nvlist"><a class="nvanchor font" href="products.html">Products</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+        <h2 class="heading1">Simran Beauty box</h2>
+    
+        <p class="para font">A great store is where you can get good quality beauty products at reasonable price
+            
+        </p>
+        
+        </div>
+        </section>
+        <aside>
+            <div class="video">
+            <video autoplay controls>
+                <source src = "media/1.mp4" type="video/mp4">
+
+            </video>
+        </div>
+        </aside>
+        <section class="section3" id="section3">
+        
+                <p class="about">
+                    
+                    In only a couple of  years, ‘Simran beauty box’ has risen as the biggest beauty goal in US with a large portion of a million cheerful clients relying upon us for their most loved brands as well as for exhortation, refreshes, master tips and recordings on the best way to look and feel dazzling dependably!
+
+                    With practically 850+ curated, very much valued and 100% certified brands and 1 lakh items, 
+                    ‘Simran beauty box’ prides itself for offering a far reaching choice of cosmetics, skincare, 
+                    hair care, aromas, shower and body, extravagance and health items for ladies and men. 
+                    We expect to if you don’t mind heading off to the most distant corners of the nation to contact you!
+                </p>
+          
+         
+        </section>
+        <footer>
+            <div id="copyright">
+              <p><!-- &#169; copyright symbol html entity number -->
+              &copy; Copyright 2020. All Rights Reserved. <br>
+              <a href="mailto:simisaggu12@gmail.com">simranbeautybox@org.net</a></p>
+            </div>
+            <div id="social">
+              <p>Connect with us in</p>
+              <p><a href="https://www.facebook.com"><img src="Images/fblogo.png" alt="facebook logo"></a></p>
+              <p><a href="https://www.twitter.com"><img src="Images/twitterlogo.png" alt="twitter logo"></a></p>
+             </div>
+             <script type="text/javascript">
+                window.addEventListener('scroll',function(){
+                    const header = document.querySelector('header');
+                    header.classList.toggle("sticky",window.scrollY > 0);
+                });
+                function Tmenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const nvbar = document.querySelector('.nvbar');
+            menuToggle.classList.toggle('active');
+            nvbar.classList.toggle('active');
+        }
+                </script>   
+          </footer>
+    </body>
+    </html>
+    
